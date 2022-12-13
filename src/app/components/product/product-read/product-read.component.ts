@@ -11,7 +11,7 @@ import { Product } from '../product.model';
 export class ProductReadComponent implements OnInit {
 
   products!: Product[]; 
-  displayedColumns = ['id', 'name', 'price', 'action'];
+  displayedColumns = ['id', 'name', 'autor', 'action', 'isbn'];
 
   constructor(private ProductService: ProductService) { }
 

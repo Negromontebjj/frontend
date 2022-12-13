@@ -12,10 +12,16 @@
         <td mat-cell *matCellDef="let row">{{row.name}}</td>
       </ng-container>
   
-        <!-- Price Column -->
-        <ng-container matColumnDef="price">
-          <th mat-header-cell *matHeaderCellDef >Preço</th>
-          <td mat-cell *matCellDef="let row">{{row.price | currency: 'BRL' }}</td>
+        <!-- Autor Column -->
+        <ng-container matColumnDef="autor">
+          <th mat-header-cell *matHeaderCellDef >Autor do Livro</th>
+          <td mat-cell *matCellDef="let row">{{row.autor}}</td>
+        </ng-container>
+
+        <!-- Isbn Column -->
+        <ng-container matColumnDef="isbn">
+          <th mat-header-cell *matHeaderCellDef >Isbn</th>
+          <td mat-cell *matCellDef="let row">{{row.isbn}}</td>
         </ng-container>
 
          <!-- Action Column -->
